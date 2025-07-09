@@ -1,0 +1,14 @@
+<section class="py-16" id="philosophy">
+  <h2 class="text-3xl font-bold text-center mb-10">Healing Philosophy</h2>
+  <p class="max-w-3xl mx-auto text-gray-400 text-center">
+    Holistic, patient-centered care emphasizing non-invasive treatments and sustainable wellness.
+  </p>
+  <div class="mt-12 flex flex-wrap justify-center gap-8">
+    {['Trust', 'Empathy', 'Evidence‑Based Care', 'Long‑term Relief'].map(point => (
+      <div class="bg-slate-800 p-6 rounded-xl max-w-xs text-center">
+        <p class="font-semibold text-xl mb-2">{point}</p>
+        <p class="text-gray-300 text-sm">Brief explanation about {point.toLowerCase()} here.</p>
+      </div>
+    ))}
+  </div>
+</section>
