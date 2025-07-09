@@ -1,12 +1,15 @@
 // 3. global.css
+// Tailwind install reminder:
+// npm install -D tailwindcss
+// npx tailwindcss init tailwind.config.cjs
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #0f172a;
+  color: white;
 }
-
-// Tailwind install reminder:
-// npm install -D tailwindcss
-// npx tailwindcss init tailwind.config.cjs
