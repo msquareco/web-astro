@@ -1,27 +1,20 @@
+// 2. BaseLayout.astro
 ---
-import "../styles/global.css";
-const { title = "MsquareCo Real Estate", description = "Timeless Elegance in Real Estate Investments" } = Astro.props;
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <title>PainFreeU - Dr. Anjum Mansuri</title>
+    <link rel="stylesheet" href="/global.css" />
   </head>
-  <body>
-    <header class="container text-center mt-4 mb-4">
-      <h1>MsquareCo</h1>
-      <p>Timeless Elegance in Real Estate</p>
-    </header>
-
-    <main class="container">
+  <body class="bg-slate-900 text-white">
+    <Header />
+    <main class="px-4 md:px-8 max-w-7xl mx-auto">
       <slot />
     </main>
-
-    <footer class="container text-center mt-4 mb-4">
-      <p>© {new Date().getFullYear()} MsquareCo. All rights reserved.</p>
-    </footer>
+    <Footer />
   </body>
 </html>
