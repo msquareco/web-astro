@@ -1,15 +1,23 @@
-// This is a Tailwind CSS configuration file that specifies the content files to scan for class names
-// and extends the default theme. It also includes a plugin array for future use.
-// It is used to customize the default Tailwind CSS configuration for a project.
-// Importing the Tailwind CSS library
-
-  // tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js,astro}",
+    './src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}',
+    './components/**/*.{astro,html,js}',
+    './pages/**/*.{astro,html,js}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: {
+          900: '#0f172a',
+          800: '#1e293b',
+        },
+        cyan: {
+          400: '#22d3ee',
+          500: '#06b6d4',
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
