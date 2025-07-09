@@ -1,17 +1,27 @@
 ---
-// src/layouts/BaseLayout.astro
-import '../styles/global.css';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+const { title = "MsquareCo Real Estate", description = "Timeless Elegance in Real Estate Investments" } = Astro.props;
 ---
-<html>
+
+<html lang="en">
   <head>
-    <title>MsquareCo</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
   </head>
   <body>
-    <Navbar />
-    <slot /> <!-- Content will be injected here -->
-    <Footer />
+    <header class="container text-center mt-4 mb-4">
+      <h1>MsquareCo</h1>
+      <p>Timeless Elegance in Real Estate</p>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="container text-center mt-4 mb-4">
+      <p>© {new Date().getFullYear()} MsquareCo. All rights reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,8 +1,58 @@
 ---
-// src/pages/index.astro
-import BaseLayout from '../layouts/BaseLayout.astro';
+import Layout from '../layouts/Layout.astro'
 ---
-<BaseLayout>
-  <h1>Welcome to MsquareCo</h1>
-  <p>Your gateway to smart Dubai real estate investments.</p>
-</BaseLayout>
+
+<Layout>
+  <section style="background-color: var(--color-bg-alt); padding: 4rem 2rem; text-align: center; border-radius: 1rem; margin-bottom: 3rem;" class="fade-in">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Discover Strategic Real Estate Investments in Dubai</h1>
+    <h2 style="font-size: 1.5rem; font-weight: normal; color: var(--color-link);">Beyond Sales. Into Strategy.</h2>
+  </section>
+
+  <section style="max-width: 800px; margin: 0 auto; padding: 2rem;" class="fade-in">
+    <p>At MsquareCo, we guide you through Dubai’s dynamic real estate landscape with a clear focus on your goals. Our philosophy is simple: investment decisions should be informed, personalized, and strategy-led. Whether you're a seasoned investor or just starting out, our curated insights, real-world experience, and transparent approach help you navigate confidently.</p>
+  </section>
+
+  <section style="background-color: #f5f2ee; padding: 4rem 2rem; border-radius: 1rem; margin: 4rem 0;" class="fade-in">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Why Invest in Dubai?</h2>
+    <ul style="list-style: none; padding: 0; max-width: 800px; margin: 0 auto; text-align: center;">
+      <li>🏙️ Global Business Hub with Zero Income Tax</li>
+      <li>✈️ Strategic Location Between Europe, Asia, Africa</li>
+      <li>🏡 High Rental Yields and Capital Appreciation</li>
+      <li>🔒 Investor-Friendly Laws & Golden Visa Opportunities</li>
+      <li>🌟 World-Class Infrastructure and Lifestyle</li>
+    </ul>
+  </section>
+
+  <section style="padding: 4rem 2rem;" class="fade-in">
+    <h2 style="text-align: center; margin-bottom: 3rem;">Our Curated Investment Picks</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div style="background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <h3 style="margin-bottom: 1rem;">Luxury Villas in Palm Jumeirah</h3>
+        <p>Exclusive waterfront living with iconic skyline views.</p>
+      </div>
+      <div style="background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <h3 style="margin-bottom: 1rem;">Downtown Dubai Apartments</h3>
+        <p>Prestigious lifestyle in the heart of Dubai next to Burj Khalifa.</p>
+      </div>
+      <div style="background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <h3 style="margin-bottom: 1rem;">Off-plan Projects in Dubai Creek Harbour</h3>
+        <p>Next-generation waterfront development with high ROI.</p>
+      </div>
+      <div style="background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <h3 style="margin-bottom: 1rem;">Commercial Spaces in Business Bay</h3>
+        <p>Prime business location for offices and retail investors.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 800px; margin: 4rem auto; padding: 2rem;" class="fade-in">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Our Philosophy</h2>
+    <p style="text-align: center;">MsquareCo believes real estate is more than transactions — it’s about creating lasting value for investors. We offer advisory services tailored to your goals, ensuring every decision is backed by data, experience, and long-term vision.</p>
+  </section>
+  <section style="padding: 4rem 2rem; text-align: center;" class="fade-in">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Invest Smartly?</h2>
+    <p style="margin-bottom: 2rem;">Contact us today and take the first step toward your Dubai property journey.</p>
+    <a href="/contact" class="cta-button">Get in Touch</a>
+  </section>
+  
+</Layout>
