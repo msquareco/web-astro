@@ -1,17 +1,9 @@
 {
   "compilerOptions": {
     "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "module": "ESNext",
-    "target": "ESNext",
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
     }
-  },
-  "include": [
-    "src/**/*",
-    "src/**/*.astro"
-  ]
+  }
 }
